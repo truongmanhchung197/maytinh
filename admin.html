@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let userName=prompt("Input your username");
+    if(userName=='Admin'){
+        let psw=prompt("Input your password");
+        if(psw=='TheMaster'){
+            alert("Welcome")
+        } else if(psw=='null'){
+            alert("Canceled")
+        } else {
+            alert("Wrong password")
+        }
+    } else if(userName=='null'){
+        alert("Canceld")
+    } else {
+        alert("I don't know you")
+    }
+</script>
+
+</body>
+</html>
