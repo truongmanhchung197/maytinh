@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function add(a,b){
+            document.getElementById("res").innerHTML= "result: "+(a+b);
+        }
+        function sub(a,b){
+            document.getElementById("res").innerHTML= "result: "+(a-b);
+        }
+        function mul(a,b){
+            document.getElementById("res").innerHTML="result: "+(a*b);
+        } function div(a,b){
+            document.getElementById("res").innerHTML="result: "+(a/b);
+        }
+    </script>
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="2"><input type="text" id="a"></td>
+        <td colspan="2"><input type="text" id="b"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="Addition(+)" onclick="add(Number(a.value),Number(b.value))"></td>
+        <td><input type="button" value="Subtraction(-)" onclick="sub(Number(a.value),Number(b.value))"></td>
+        <td><input type="button" value="Multiplication(X)" onclick="mul(Number(a.value),Number(b.value))"></td>
+        <td><input type="button" value="Division(/)" onclick="div(Number(a.value),Number(b.value))"></td>
+    </tr>
+</table>
+<p id="res"></p>
+</body>
+</html>
